@@ -11,11 +11,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val button = findViewById<Button>(R.id.button)
         button.setOnClickListener {
-            nextScreen();
+            nextScreen()
         }
     }
-    fun nextScreen(){
-        val intent = Intent(this,LeagueActivity::class.java);
-        startActivity(intent);
+    private fun nextScreen(){
+        val intent = Intent(this,LeagueActivity::class.java)
+        startActivity(intent)
     }
 }

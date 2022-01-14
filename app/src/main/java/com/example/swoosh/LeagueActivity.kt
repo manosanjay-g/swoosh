@@ -11,11 +11,11 @@ class LeagueActivity : AppCompatActivity() {
         setContentView(R.layout.activity_league)
         val nextButton = findViewById<Button>(R.id.button4)
         nextButton.setOnClickListener {
-            nextScreen();
+            nextScreen()
         }
     }
-    fun nextScreen(){
-        val intent = Intent(this,SkillSelectionActivity::class.java);
-        startActivity(intent);
+    private fun nextScreen(){
+        val intent = Intent(this,SkillSelectionActivity::class.java)
+        startActivity(intent)
     }
 }
