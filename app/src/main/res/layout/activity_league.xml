@@ -48,36 +48,39 @@
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <ToggleButton
-        android:id="@+id/button"
+        android:id="@+id/mensLeagueBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/swoosh_button"
+        android:background="@drawable/toggle_selector"
         android:fontFamily="@font/montserrat"
-        android:textOn="@string/mens"
-        android:textOff="@string/mens"
+        android:onClick="onMensClick"
         android:textColor="@android:color/white"
+        android:textOff="@string/mens"
+        android:textOn="@string/mens"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ToggleButton
-        android:id="@+id/button3"
+        android:id="@+id/mixedLeagueBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/swoosh_button"
+        android:background="@drawable/toggle_selector"
+
         android:fontFamily="@font/montserrat"
-        android:textOn="@string/mixed"
-        android:textOff="@string/mixed"
+        android:onClick="onMixedClick"
         android:textColor="@android:color/white"
+        android:textOff="@string/mixed"
+        android:textOn="@string/mixed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/womenLeagueBtn" />
 
     <android.widget.Button
         android:id="@+id/button4"
@@ -95,20 +98,21 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ToggleButton
-        android:id="@+id/button2"
+        android:id="@+id/womenLeagueBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/swoosh_button"
+        android:background="@drawable/toggle_selector"
         android:fontFamily="@font/montserrat"
-        android:textOn="@string/women"
-        android:textOff="@string/women"
+        android:onClick="onWomenClick"
         android:textColor="@android:color/white"
+        android:textOff="@string/women"
+        android:textOn="@string/women"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/mensLeagueBtn" />
 
     <TextView
         android:id="@+id/textView"

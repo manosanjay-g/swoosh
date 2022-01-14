@@ -48,14 +48,15 @@
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <ToggleButton
-        android:id="@+id/button"
+        android:id="@+id/beginnerBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/swoosh_button"
+        android:background="@drawable/toggle_selector"
         android:fontFamily="@font/montserrat"
         android:textOn="@string/beginner"
+        android:onClick="onBeginnerClick"
         android:textOff="@string/beginner"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <android.widget.Button
-        android:id="@+id/button4"
+        android:id="@+id/finishBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
@@ -79,20 +80,21 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ToggleButton
-        android:id="@+id/button2"
+        android:id="@+id/proBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/swoosh_button"
+        android:background="@drawable/toggle_selector"
         android:fontFamily="@font/montserrat"
         android:textOff="@string/pro"
         android:textOn="@string/pro"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
+        android:onClick="onProClick"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/beginnerBtn" />
 
     <TextView
         android:id="@+id/textView"
